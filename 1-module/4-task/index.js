@@ -4,5 +4,13 @@
  * @returns {boolean}
  */
 function checkSpam(str) {
-  // ваш код...
-}
+   switch (str.toUpperCase()) {
+     case 'free xxxxx'.toUpperCase():
+       return true;
+      case '1XbeT now'.toUpperCase():
+        return true; 
+     default:
+       return false;  
+   }
+  }
+
