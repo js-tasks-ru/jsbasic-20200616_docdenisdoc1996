@@ -12,11 +12,11 @@ function highlight(table) {
         if (td.hasAttribute('data-available')) {
 
             if (td.getAttribute('data-available') === 'true') {
-                tr.className +='available'
+                tr.classList.add('available')
             }
               
             if (td.getAttribute('data-available') === 'false') {
-                tr.className+='unavailable'
+                tr.classList.add('unavailable')
             }
           } else{
               tr.setAttribute('hidden', true)
@@ -33,8 +33,6 @@ function highlight(table) {
           if (age < 18) {
             tr.style = 'text-decoration: line-through'
         }
-
-        console.log(tr)
     }
     }
 
